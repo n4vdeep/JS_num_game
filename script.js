@@ -28,7 +28,14 @@ window.onload = function () {
 */
 function playGame() {
   let numberGuess = document.getElementById('number-guess').value;
+  displayResult(numberGuess);
+}
 
+/**
+* Show the result for if the guess it too high, too low, or correct
+* HINT: Use if, else if, else statement 
+*/
+function displayResult(numberGuess) {
   if (numberGuess > correctNumber) {
     console.log("too high")
   } else if (numberGuess < correctNumber) {
@@ -37,14 +44,6 @@ function playGame() {
     console.log("correct")
   }
 }
-
-/**
-* Show the result for if the guess it too high, too low, or correct
-* HINT: Use if, else if, else statement 
-*/
-// *CODE GOES BELOW HERE *
-
-
 
 /**
 * Initialize a new game by resetting all values and content on the page
